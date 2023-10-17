@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://roma2023.github.io/sitemap.xml
