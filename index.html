@@ -315,7 +315,11 @@
 
           <!-- calendar -->
           <div class="calendar-container">
-            <iframe src="https://calendar.google.com/calendar/embed?src=rsaparkh%40andrew.cmu.edu&ctz=Europe%2FMoscow" style="border:2px #ffffff solid;" name="myiFrame" scrolling="yes" frameborder="1" marginheight="5px" marginwidth="0px" height="55%" width="55%" allowfullscreen></iframe>
+            <iframe src="https://calendar.google.com/calendar/embed?src=rsaparkh%40andrew.cmu.edu&ctz=Europe%2FMoscow" 
+            style="border: 2px #ffffff solid; margin-top: 20px;" 
+            name="myiFrame" scrolling="yes" frameborder="1" 
+            height="55%" width="55%" allowfullscreen></iframe>
+
           </div>
 
           <!-- Social -->
@@ -395,7 +399,7 @@
   /*
    * This JavaScript code has been adapted from the article 
    * https://css-tricks.com/reading-position-indicator/ authored by Pankaj Parashar, 
-   * published on the website https://css-tricks.com on the 7th of May, 2014.
+   * published on the website https://-tricks.com on the 7th of May, 2014.
    * Couple of changes were made to the original code to make it compatible 
    * with the `al-foio` theme.
    */
@@ -403,7 +407,7 @@
   /*
    * We set up the bar after all elements are done loading.
    * In some cases, if the images in the page are larger than the intended
-   * size they'll have on the page, they'll be resized via CSS to accomodate
+   * size they'll have on the page, they'll be resized via  to accomodate
    * the desired size. This mistake, however, breaks the computations as the
    * scroll size is computed as soon as the elements finish loading.
    * To account for this, a minimal delay was introduced before computing the
@@ -415,7 +419,7 @@
   /*
    * We set up the bar according to the browser.
    * If the browser supports the progress element we use that.
-   * Otherwise, we resize the bar thru CSS styling
+   * Otherwise, we resize the bar thru  styling
    */
   function progressBarSetup() {
     if ("max" in document.createElement("progress")) {
@@ -441,7 +445,7 @@
 
   function initializeProgressElement() {
     let navbarHeight = $("#navbar").outerHeight(true);
-    $("body").css({ "padding-top": navbarHeight });
+    $("body").({ "padding-top": navbarHeight });
     $("progress-container").css({ "padding-top": navbarHeight });
     progressBar.css({ top: navbarHeight });
     progressBar.attr({
